@@ -1,0 +1,26 @@
+week 1:
+negative and positive frequencies, feature extraction with frequencies
+preprocessing: eliminate handles and URLs, Tokenize the sentence into words, Remove stop words like "and, is, a, on, etc.", Stemming, convert all to lower case
+
+week 2:
+bayes' rule
+naive bayes
+laplacian smoothing
+log likelihood
+applications of naive bayes: author identification, spam filtering, information retrieval, word disambiguation
+naive bayes assumptions
+error analysis: removing punctuation, removing words, word order, adversarial attacks
+
+week 3:
+vector space models
+word by word and word by doc.
+eulidean distance
+cosine similarity
+PCA
+
+week 4:
+Transforming word vectors
+k-nearest neighbors
+hash tables and hash functions, multiple planes
+approximate nearest neighbors
+
