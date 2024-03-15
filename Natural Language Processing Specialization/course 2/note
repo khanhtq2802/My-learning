@@ -1,5 +1,5 @@
 week 1:
 identify a misspelled word
-find strings n edit distance away
+find strings n edit distance away: insert, delete, switch, replace
 filter candidates
 calulate word probabilities
