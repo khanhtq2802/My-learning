@@ -3,3 +3,5 @@ identify a misspelled word
 find strings n edit distance away: insert, delete, switch, replace
 filter candidates
 calulate word probabilities
+
+minimum edit distance algorithm
