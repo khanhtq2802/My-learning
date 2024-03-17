@@ -5,3 +5,13 @@ filter candidates
 calulate word probabilities
 
 minimum edit distance algorithm
+
+week 2:
+part of speed tagging
+you can use POS tagging for: 
+- Identifying named entities
+- Speech recognition
+- Coreference Resolution
+
+Markov Chains, Hidden Markov Models
+emission probabilities
