@@ -14,4 +14,10 @@ you can use POS tagging for:
 - Coreference Resolution
 
 Markov Chains, Hidden Markov Models
+transition probabilities
 emission probabilities
+
+viterbi algorithm
+initialization
+forward pass
+backward pass
