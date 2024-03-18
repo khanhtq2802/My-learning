@@ -35,3 +35,18 @@ bigrams: <s> </s>
 trigram: <s><s> </s>
 N-grams model: add N - 1 start tokens <s>
 </s> has 2 motivation
+
+perplexity, log perplexity
+
+criteria to create the vocabulary:
+min word frequency f
+Max |V|, include words by frequency
+Use <UNK> sparingly (Why?)
+Perplexity -  only compare LMs with the same V
+
+smoothing:
+add-one smoothing(Laplacian smoothing)
+add-k smoothing
+advanced methods: Kneser-Ney smoothing, Good-Turing smoothing
+backoff, stupid backoff, interpolation
+
