@@ -50,3 +50,14 @@ add-k smoothing
 advanced methods: Kneser-Ney smoothing, Good-Turing smoothing
 backoff, stupid backoff, interpolation
 
+week 4:
+word embeddings
+self-supervised
+
+word embeddings methods:
+classical methods: word2vec, Continuous bag-of-words (CBOW), Continuous skip-gram / Skip-gram with negative sampling (SGNS), Global Vectors (GloVe), fastText
+deep learning, contextual embeddings: BERT, ELMo, GPT-2
+
+Continuous bag-of-words
+center word
+context words, sliding window
