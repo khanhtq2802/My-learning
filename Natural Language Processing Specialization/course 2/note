@@ -21,3 +21,17 @@ viterbi algorithm
 initialization
 forward pass
 backward pass
+
+week 3:
+N-Grams
+unigrams, bigrams, trigrams
+problem: corpus almost never contains exact sentence we're interested in or even its longer subsequences
+
+approximation of sequence probability: bigrams, trigrams,..., N-gram
+markov assumption: only last N words matter
+
+starting and ending sentences: 
+bigrams: <s> </s>
+trigram: <s><s> </s>
+N-grams model: add N - 1 start tokens <s>
+</s> has 2 motivation
