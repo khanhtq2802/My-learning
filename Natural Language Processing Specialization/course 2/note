@@ -61,3 +61,12 @@ deep learning, contextual embeddings: BERT, ELMo, GPT-2
 Continuous bag-of-words
 center word
 context words, sliding window
+Architecturee of the CBOW Model
+Extracting Word Embeedding Vectors
+
+Evaluating Word Embedings: 
+Intrinsic Evaluation: Semantic analogies, Clustering, Visualization
+Extrinsic Evaluation: 
+-test word embeddings on external task
+-named entity recognition
+-parts-of-speech tagging

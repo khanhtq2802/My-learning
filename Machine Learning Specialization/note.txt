@@ -1,0 +1,65 @@
+course 1:
+regression
+supervised vs unsupervised learning
+gradient descent, adam
+cost function
+
+multiple linear regression
+numpy
+Multi Variate regression
+feature scaling
+feature engineering
+
+logistic regression
+classification
+sigmoid function
+decision boundary
+logistic loss
+overfitting - high variance
+underfitting - high bias
+regularization
+
+course 2:
+neural networds
+tensorflow
+neurons and layers
+neural networds for binary classification
+
+neural networds training
+activation functions
+multiclass classification
+convolutional layers
+fully connected layer
+relu 
+softmax
+multiclass classification
+
+diagnostic
+training set, cross validation set, test set
+bias and variance
+baseline level of performance
+fixes high variance: get more training examples, try smaller sets of feature, try increasing lambda
+fixes high bias: try getting additional features, try adding polynomial features, try decreasing lambda
+error analysis: manually examine a sample of the training examples that the model misclassified in order to identify common traits and trends
+data augmentation
+transfer learning
+
+decision trees
+entropy
+infomation gradient
+one hot encoding
+sampling with replacement
+tree ensemble
+unstructured data and structured data
+
+course 3:
+clustering: K means
+anomaly detection
+
+collaborative filtering
+recommender systems
+content-based filtering
+
+reinforcement learning
+state-action value function
+continuous state spaces
