@@ -70,3 +70,5 @@ Extrinsic Evaluation:
 -test word embeddings on external task
 -named entity recognition
 -parts-of-speech tagging
+-time consuming
+-more difficult to troubleshoot
