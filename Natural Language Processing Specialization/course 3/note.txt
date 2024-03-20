@@ -1,0 +1,16 @@
+week 1:
+embedding layers
+mean layers
+
+N-grams: need a lot of space and RAM
+Recurrent Neural Networds
+RNNs Basic Structure: Wh, Wx, W
+An RNN world have the same number of parameters for word sequences of different lengths
+
+Application of RNNs
+One to One: given some scores of a championship, you can predict the winner. 
+One to Many: given an image, you can predict what the caption is going to be.
+Many to One: given a tweet, you can predict the sentiment of that tweet
+Many to Many: given an english sentence, you can translate it to its German equivalent
+
+Math in Simple RNNs
