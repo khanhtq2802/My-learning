@@ -23,10 +23,14 @@ tf.scan(fn, elems, initializer,...)
 
 Gated Recurrent Units (GRUs)
 relevance gates: 
-- use to calculate hidden state candidate
+- input: previous hidden state, x
+- activation: sigmoid
+- use to calculate hidden state candidate, multiple with previous, concat with x, go through Wh, tanh => candidate hidden state
 - 0 mean not relevance just use x
 - 1 mean relevance just both x and previous hidden state
-update gates: 
+update gates:
+- input: previous hidden state, x
+- activation: sigmoid
 - use to calculate hidden state
 - 0 mean don't update, use previous hidden state, don't use hidden state candidate
 - 1 mean update all, don't use previous hidden state, use hidden state candidate
@@ -48,3 +52,82 @@ solutions to vanishing gradient problems:
 - identity RNN with ReLU activation
 - gradient clipping
 - skip connections
+
+LSTMs
+memorable solutions: learns when to remember and when to forget
+
+basic anatomy:
+-a cell state
+-a hidden state
+-multiple gates
+
+gates allow gradients to avoid vanishing and exploding
+
+discard anything irrelevant
+add important new information
+produce output
+
+forget gate:
+- input: hidden previous state, x
+- activation sigmoid
+- used to update cell state, decide what info should forget or not
+- 0 means forget all
+- 1 means don't forget
+
+input gate:
+- input: previous hidden state, x
+- activation tanh, can try other
+- used to update cell state, decide what info should add to cell state
+- 0 means don't add to input gate
+- 1 means add to input gate
+
+candidate cell state:
+- input: hidden previous state, x
+- activation tanh, can try other
+- used to update cell state
+- multiple with input gate, then add previous cell state to calculate current cell state
+
+output gate:
+- input: hidden previous state, x
+- activation sigmoid
+- used to calculate current hidden state
+- multiple with cell state transform
+
+cell state transform:
+- input: current cell state
+- activation tanh, some LSTMs use linear activation
+- used to calculate current hidden state
+- multiple with output gate
+
+y_hat, output:
+- input current hidden state
+
+applications of LSTMs
+- next-character prediction
+- chatbots
+- music composition
+- image captioning
+- speech recognition
+
+Named Entity Recognition (NER)
+Application of NER systems
+- search engine efficiency
+- recommendation engines
+- customer service
+- automatic trading
+
+1. convert words and entity classes into same-length numberical arrays
+token padding:
+- for LSTMs, all sequences need to be the same size
+- set sequence length to a certain number
+- use the <PAD> token to fill empty spaces
+2. train in batches for faster processing
+3. feed it into an LSTM Units
+4. run the output through a dense layer
+5. Predict using a log softmax over K classes
+
+To compare the accuracy, just follow the following steps:
+Pass test set through the model 
+Get arg max across the prediction array
+Mask padded tokens
+Compare with the true labels. 
