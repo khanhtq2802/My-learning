@@ -13,4 +13,38 @@ One to Many: given an image, you can predict what the caption is going to be.
 Many to One: given a tweet, you can predict the sentiment of that tweet
 Many to Many: given an english sentence, you can translate it to its German equivalent
 
-Math in Simple RNNs
+Feed Forward, Math in Simple RNNs
+Hidden state is used to pass info to next state
+y_hat use current hidden state to calculate
+
+
+Cross Entropy Loss for RNNs
+tf.scan(fn, elems, initializer,...)
+
+Gated Recurrent Units (GRUs)
+relevance gates: 
+- use to calculate hidden state candidate
+- 0 mean not relevance just use x
+- 1 mean relevance just both x and previous hidden state
+update gates: 
+- use to calculate hidden state
+- 0 mean don't update, use previous hidden state, don't use hidden state candidate
+- 1 mean update all, don't use previous hidden state, use hidden state candidate
+
+Bi-directional RNNs
+Deep RNNs
+
+Evaluate with perplexity
+
+week 2:
+advantages of RNNs:
+- capture dependencies within a short range
+- less RAM than other n-gram models
+disadvantages of RNNs"
+- struggle with longer term dependencies
+- very prone to vanishing or exploding grdients
+
+solutions to vanishing gradient problems:
+- identity RNN with ReLU activation
+- gradient clipping
+- skip connections
