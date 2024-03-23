@@ -131,3 +131,35 @@ Pass test set through the model
 Get arg max across the prediction array
 Mask padded tokens
 Compare with the true labels. 
+
+week 3:
+Siamese Network
+applications of siamese networks:
+- handwritten checks
+- quetions duplicates 
+- queries
+
+sister-networks, sub-networks share identical paramenters
+1. embedding
+2. LSTM
+3. Vectors
+4. Cosine Similarity, can use other similarity
+
+anchor, positive, negative
+diff = -cos(A, P) + cos(A, N)
+
+triplets
+alpha margin, hyparamenters
+loss(A, P, N) = max(diff + alpha, 0)
+random triplet selection: nothing to learn
+easy negative triplet: cos(A, N) << cos(A, P)
+semi-hard negative triplet: cos(A, N) ~ cos(A, P), cos(A, N) < cos(A, P)
+hard negative triplet: cos(A, P) < cos(A, N)
+
+batch 1 vs batch 2
+
+mean_neg: speeds up training
+closest_neg: helps penalize the cost more 
+cost1 = max(-cos(A,P) + mean_neg + alpha, 0)
+cost2 = max(-cos(A,P) + closest_neg + alpha, 0)
+full_cost = cost1 + cost2
