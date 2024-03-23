@@ -163,3 +163,12 @@ closest_neg: helps penalize the cost more
 cost1 = max(-cos(A,P) + mean_neg + alpha, 0)
 cost2 = max(-cos(A,P) + closest_neg + alpha, 0)
 full_cost = cost1 + cost2
+
+one shot learning: measures similarity between 2 classes
+classification: classfies input as 1 of K classes
+
+testing:
+1. Convert two inputs into an array of numbers
+2. Feed it into your model
+3. Compare 𝒗1,𝒗2 using cosine similarity
+4. Test against a threshold
