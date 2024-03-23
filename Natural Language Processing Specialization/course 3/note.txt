@@ -159,7 +159,11 @@ hard negative triplet: cos(A, P) < cos(A, N)
 batch 1 vs batch 2
 
 mean_neg: speeds up training
-closest_neg: helps penalize the cost more 
+closest_neg: helps penalize the cost more
+What is the closest negative in this set of numbers assuming a duplicate pair similarity of 0.6?
+[-0.9,-0.4,0.4, 0.8]
+=> 0.4
+
 cost1 = max(-cos(A,P) + mean_neg + alpha, 0)
 cost2 = max(-cos(A,P) + closest_neg + alpha, 0)
 full_cost = cost1 + cost2
